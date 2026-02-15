@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!--prevent the automatic favicon request-->
+	<link rel="icon" href="data:,">
+	<link rel="stylesheet" href="style.css"> 
+	<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+
+	<!--Edit index.html to change the title.-->
+	<title>Valentines Day Yay!</title>
+
+	<!--p5/ folder should be at same level as folder containing this html-->
+	<script type="text/javascript" src="p5/p5.js"></script>
+
+
+	<style>
+		body {
+			padding: 0;
+			margin: 1;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="namePrompt">
+		<div class="promptBox">
+			<p class="vt323">Hi There! What's your name?: </p>
+			<input type="text" id="nameInput">
+			<button class="vt323" id="enterButton">Enter</button>
+			<br>
+			<br>
+			<p class="vt323" id="errorMessage" style="display:none; color:red;">Ummmm...this isn't for you...</p>
+		</div>
+	</div>
+
+	<div id="valentineScreen" style="display:none;">
+		<h1 id="welcomeText"></h1>
+		<p>Will you be my Valentine? (pls say yes)</p>
+		<button id="yesButton">Yes!</button>
+		<button id="noButton">No ;c</button>
+	</div>
+
+	<div id="envelopeScreen" style= "display: none;">
+		<div class="envelope" id="envelope">
+			<div class="flap"></div>
+			<div class="letter" id="letter">
+				<p id="header">
+					<br>Avy,
+				</p>
+				<p id="letterContent">
+					There's nothing I've enjoyed more than spending
+					this year <br> with you so far. From the moment the new year started and onward, I've gotten to enjoy so many moments with you, <br> and I never want them to end. 
+					I love being with you, <br>whether it's just watching shows and eating icecream in pijamas, or daring adventures in the snow and getting <br>dinner all dressed up.
+					Thank you for bringing so much joy into my life, my sweet, thoughtful, beautiful girl. <br> Thank you for being my valentine ❤️
+					<br>
+					Love,  Alessia
+				</p>
+			</div>
+			<div class="heartStamp" id="heartStamp">❤️</div>
+		</div>
+	</div>
+
+
+
+<!--your script *.js files should be in same folder as this html-->
+<script type="text/javascript" src="sketch.js"></script>
+<audio id="bgMusic" src="media/Heavy_spotdown.org.mp3" loop></audio>
+</body>
+
+</html>
